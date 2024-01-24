@@ -1,12 +1,29 @@
 @media (max-width: 768px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .card {
+        flex-grow: 2;
     }
   }
 
 @media (min-width: 768px) {
-
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .card {
+        flex-grow: 2;
+    }
   }
 
 @media (min-width: 1200px) {
@@ -14,8 +31,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        row-gap: 10px;
-        column-gap: 10px;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
     }
   }
